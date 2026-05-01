@@ -41,6 +41,7 @@ export const services: Record<
     keyword: string;
     image: string;
     intro: string;
+    definition: string;
     variants: string[];
     problems: string[];
     solutions: string[];
@@ -56,6 +57,8 @@ export const services: Record<
     image: images.carrelage as string,
     intro:
       "Vous cherchez un carreleur à Beauvallon capable de poser un carrelage intérieur net, durable et aligné au millimètre ? Damien Mugnier intervient dans le Sud-Ouest lyonnais pour les salons, cuisines, salles de bain et pièces de vie exigeantes. Le travail commence toujours par le support : planéité, humidité, ancien revêtement, seuils, plinthes, réservation des portes. C’est cette préparation invisible qui donne ensuite un sol silencieux, régulier et élégant.",
+    definition:
+      "Un carrelage intérieur haut de gamme est une pose où le support, le calepinage, les coupes et les joints sont préparés avant l’esthétique. À Beauvallon, Damien Mugnier privilégie cette méthode pour obtenir un sol durable, régulier et cohérent avec la pièce.",
     variants: [
       "pose carrelage grand format",
       "carrelage salon cuisine",
@@ -100,6 +103,8 @@ export const services: Record<
     image: images.terrasse as string,
     intro:
       "Une terrasse carrelée dans le Lyon sud doit résister à la pluie, au gel, au soleil et aux passages répétés. Damien Mugnier réalise des extérieurs premium à Beauvallon, Givors, Mornant et Brignais avec une approche de maçon carreleur : pentes, évacuation, seuils, escaliers, rives et supports sont traités avant le choix esthétique.",
+    definition:
+      "Une terrasse carrelée durable est d’abord un ouvrage de pente et de support. Le revêtement vient ensuite. Damien Mugnier traite l’eau, les seuils, les rives et la glissance avant la finition pour éviter les reprises après les premières intempéries.",
     variants: [
       "terrasse carrelée",
       "dallage extérieur",
@@ -144,6 +149,8 @@ export const services: Record<
     image: images.piscine as string,
     intro:
       "Une plage piscine dans le Rhône doit être belle pieds nus, stable dans le temps et cohérente avec la maison. Damien Mugnier conçoit les abords de piscine, margelles, spas et terrasses associées avec une vision complète : support, évacuation, glissance, dilatation, découpes techniques et rendu final.",
+    definition:
+      "Une plage piscine réussie associe sécurité, confort pieds nus et alignement visuel avec le bassin. Dans le Rhône, Damien Mugnier travaille les margelles, les pentes et les découpes techniques pour créer un extérieur élégant et durable.",
     variants: [
       "plage piscine carrelage",
       "margelles piscine",
@@ -188,6 +195,8 @@ export const services: Record<
     image: images.mur as string,
     intro:
       "Un beau carrelage ne tient pas sur un mauvais support. C’est pourquoi Damien Mugnier intervient aussi en maçonnerie générale à Beauvallon : dalles béton, murs, reprises, seuils, escaliers, supports de terrasse ou préparation avant carrelage. L’approche est concrète : comprendre ce qui porte, ce qui bouge, ce qui prend l’eau et ce qui doit rester stable.",
+    definition:
+      "La maçonnerie générale prépare la stabilité d’un chantier : dalle, mur, seuil, support, pente ou reprise. Pour Damien Mugnier, elle sert directement la finition car un carrelage premium dépend toujours d’un support fiable.",
     variants: [
       "dalle béton",
       "mur en pierre",
@@ -232,6 +241,8 @@ export const services: Record<
     image: images.bain as string,
     intro:
       "Une rénovation complète réussie ne se limite pas à changer des matériaux. Il faut organiser les étapes, anticiper les surprises et garder une cohérence entre technique et esthétique. Damien Mugnier accompagne les projets de rénovation premium à Beauvallon et dans le Sud-Ouest lyonnais : salle de bain, pièce de vie, terrasse, piscine, supports et finitions.",
+    definition:
+      "Une rénovation complète premium coordonne technique, planning et finition. Damien Mugnier commence par les contraintes invisibles, puis choisit les matériaux et les détails de pose pour livrer une maison plus confortable, cohérente et durable.",
     variants: [
       "rénovation salle de bain",
       "rénovation maison",

@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, Hammer, MapPin, Phone, Star } from "lucide-re
 import { CTA } from "@/components/CTA";
 import { PremiumImage } from "@/components/PremiumImage";
 import { business, images, localProjects, services, zones } from "@/lib/site";
+import { LeadMagnet } from "@/components/LeadMagnet";
 
 export default function HomePage() {
   return (
@@ -163,6 +164,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <LeadMagnet />
       <CTA />
     </>
   );

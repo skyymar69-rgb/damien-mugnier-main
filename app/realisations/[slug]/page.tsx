@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 import { CTA } from "@/components/CTA";
 import { PremiumImage } from "@/components/PremiumImage";
 import { localProjects, services } from "@/lib/site";
+import { JsonLd } from "@/components/JsonLd";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { projectSchema } from "@/lib/seo";
 
 export function generateStaticParams() {
   return localProjects.map((project) => ({ slug: project.slug }));
@@ -28,9 +31,11 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   const project = localProjects.find((item) => item.slug === slug);
   if (!project) notFound();
   const service = services[project.service];
+  const schema = projectSchema(slug);
 
   return (
     <>
+      {schema && <JsonLd data={schema} />}
       <section className="bg-navy py-20 text-white md:py-28">
         <div className="container-wide grid gap-10 md:grid-cols-12 md:items-center">
           <div className="md:col-span-7">
@@ -52,6 +57,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           </div>
         </div>
       </section>
+      <Breadcrumbs
+        items={[
+          { name: "Accueil", href: "/" },
+          { name: "Réalisations", href: "/realisations" },
+          { name: project.city, href: `/realisations/${project.slug}` },
+        ]}
+      />
       <article className="container-wide prose-premium py-20">
         <h2>Contexte local à {project.city}</h2>
         <p>

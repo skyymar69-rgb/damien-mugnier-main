@@ -12,8 +12,8 @@
   --color-gold: var(--gold);
   --color-ivory: var(--ivory);
   --color-concrete: var(--concrete);
-  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Aptos Display", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: Aptos, "Segoe UI", ui-sans-serif, system-ui, sans-serif;
   --shadow-premium: 0 22px 70px rgb(15 42 68 / 0.16);
 }
 
