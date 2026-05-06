@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { Contact, Download, MapPin, Star, Globe, X, Phone, Mail, QrCode } from "lucide-react";
 import logo from "@/assets/logo.webp";
 import { business } from "@/lib/site";
@@ -88,7 +89,7 @@ export function DigitalCard() {
         <Contact className="hidden h-3.5 w-3.5 lg:inline" aria-hidden />
       </button>
 
-      {open && (
+      {open && typeof document !== "undefined" && createPortal(
         <div
           className="fixed inset-0 z-[100] flex items-start justify-center overflow-y-auto bg-primary/40 p-4 backdrop-blur-md animate-fade-in sm:items-center"
           onClick={() => setOpen(false)}
@@ -205,7 +206,8 @@ export function DigitalCard() {
               </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body,
       )}
     </>
   );
