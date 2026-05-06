@@ -1,0 +1,14 @@
+{
+  "name": "Damien Mugnier — Carreleur Maçon Rénovation",
+  "short_name": "Damien Mugnier",
+  "description": "Artisan carreleur, maçon et rénovation premium dans le Sud-Ouest Lyonnais.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fefefe",
+  "theme_color": "#1a2755",
+  "lang": "fr-FR",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/favicon.ico", "sizes": "64x64 32x32 24x24 16x16", "type": "image/x-icon" }
+  ]
+}

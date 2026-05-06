@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /damien-mugnier.vcf$
+
+Host: https://damienmugnier.fr
+Sitemap: https://damienmugnier.fr/sitemap.xml

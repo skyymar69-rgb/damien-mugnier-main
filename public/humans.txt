@@ -1,0 +1,13 @@
+/* TEAM */
+Artisan: Damien Mugnier
+Site: https://damienmugnier.fr
+Contact: damienmugnier [at] hotmail.fr
+Lieu: Beauvallon, France
+
+/* THANKS */
+Web: Kayzen Web — https://internet.kayzen-lyon.fr
+
+/* SITE */
+Langue: Français (fr-FR)
+Composants: TanStack Start, React 19, Tailwind CSS 4, Vite
+Hébergement: Vercel
