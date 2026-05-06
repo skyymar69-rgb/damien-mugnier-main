@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "dist/client",
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
@@ -62,5 +63,9 @@
     { "source": "/home", "destination": "/", "permanent": true },
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/index", "destination": "/", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/", "destination": "/_shell.html" },
+    { "source": "/((?!assets/|.*\\..*).*)", "destination": "/_shell.html" }
   ]
 }
