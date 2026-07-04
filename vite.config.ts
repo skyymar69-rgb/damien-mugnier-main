@@ -11,11 +11,23 @@ export default defineConfig({
   tanstackStart: {
     spa: {
       enabled: true,
+      // The SPA shell used to be prerendered at "/" (maskPath default), which
+      // prevented the real homepage from being prerendered: production served
+      // an empty-main shell as index.html, causing CLS 0.7 and a slow LCP.
+      // Masking the shell on "/?shell" (same route, distinct prerender key)
+      // lets "/" be prerendered with its full content while _shell.html
+      // remains the SPA fallback for non-prerendered URLs.
+      maskPath: "/?shell",
       prerender: {
         enabled: true,
         crawlLinks: true,
         retryCount: 2,
       },
+    },
+    prerender: {
+      enabled: true,
+      crawlLinks: true,
+      retryCount: 2,
     },
   },
 });

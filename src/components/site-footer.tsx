@@ -9,7 +9,15 @@ export function SiteFooter() {
       <div className="container-prose grid gap-10 py-16 md:grid-cols-12">
         <div className="md:col-span-4">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="" className="h-12 w-auto rounded bg-background p-1.5" />
+            <img
+              src={logo}
+              alt=""
+              width={48}
+              height={48}
+              loading="lazy"
+              decoding="async"
+              className="h-12 w-auto rounded bg-background p-1.5"
+            />
             <span className="font-display text-xl font-semibold">Damien Mugnier</span>
           </div>
           <p className="mt-4 max-w-md text-sm text-primary-foreground/75">
