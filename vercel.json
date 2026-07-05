@@ -65,6 +65,6 @@
     { "source": "/index", "destination": "/", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/((?!assets/|.*\\..*).*)", "destination": "/_shell.html" }
+    { "source": "/((?!assets/|.*\\..*).*)", "destination": "/_shell" }
   ]
 }
